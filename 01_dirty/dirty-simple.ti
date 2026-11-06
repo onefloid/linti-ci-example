@@ -1,0 +1,9 @@
+#SECTION Prolog
+
+DatasourceNameForServer=pDimensionName;
+
+#SECTION Metadata
+
+IF ( ElementType( pDimensionName, pHierarchyName, vElementName) @= pElementType  );
+DimensionElementDelete( pDimensionName, vElementName );
+EndIf;
